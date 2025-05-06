@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-outline-black {
+    text-shadow:
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+      -1px  1px 0 #000,
+       1px  1px 0 #000;
+  }
+  .text-outline-white {
+    text-shadow:
+      -1px -1px 0 #fff,  
+       1px -1px 0 #fff,
+      -1px  1px 0 #fff,
+       1px  1px 0 #fff;
+  }
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Acme','sans-serif';
+  }
+  
+  .scroll-x-custom::-webkit-scrollbar {
+    height: 10px; /* altura para scroll horizontal */
+  }
+  
+  .scroll-x-custom::-webkit-scrollbar-thumb {
+    background-color: #FF004F; /* tailwind pink-500 */
+    border-radius: 9999px;
+
+  }
+  
+  .scroll-x-custom::-webkit-scrollbar-track {
+    background-color: #f3f4f6; /* tailwind gray-100 */
+
+  }
